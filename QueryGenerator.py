@@ -1,3 +1,4 @@
-import streamlit
+import streamlit as st
 
-streamlit.header("hello")
+st.text_input(label='Temp',placeholder='temp')
+st.header("hello")
