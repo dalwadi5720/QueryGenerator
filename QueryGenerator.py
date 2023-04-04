@@ -160,7 +160,7 @@ UPDATED_BY=st.text_input(label='UPDATED_BY',placeholder='UPDATED_BY')
 TEMP_STATUES_CHECK=st.text_input(label='TEMP_STATUES_CHECK',placeholder='TEMP_STATUES_CHECK')
 
 
-Generated_Query = st.text("select {ID} AS ID , '{}')
+#Generated_Query = st.text("select {ID} AS ID , '{}')
                           
 for i in range(0,len(lst)):
     if i == 0:
