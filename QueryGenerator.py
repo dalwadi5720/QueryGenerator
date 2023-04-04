@@ -223,4 +223,4 @@ for key,value in dict.items():
   else:
     Generated_Query += f"{value} AS {key},"
     
-st.text(Generated_Query)
+st.text_area(Generated_Query)
