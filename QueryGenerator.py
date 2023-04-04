@@ -225,7 +225,8 @@ for key,value in dict.items():
     
 st.write(Generated_Query)
 
-if st.button('Wish Good morning'):
-
-    st.write('Good Morning')
+if st.button('Run Query'):
+    for key,value in dict.items():
+        if value == '':
+            st.write('**Please enter value into {key}**')
         
