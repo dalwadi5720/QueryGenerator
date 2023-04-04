@@ -196,6 +196,6 @@ for key,value in dict.items():
     st.text(f"select {value} AS {key},")
     count += 1
   else:
-    st.text(f"select {value} AS {key},")
+    st.text(f"{value} AS {key},")
     
   
