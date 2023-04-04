@@ -1,8 +1,8 @@
 import streamlit as st
 
-temp = st.text_input(label='Temp',placeholder='temp')
-st.header("hello")
-st.text(temp)
+# temp = st.text_input(label='Temp',placeholder='temp')
+# st.header("hello")
+# st.text(temp)
 
 
 
@@ -33,7 +33,7 @@ lst = ["ID",
 "UPDATED_BY",
 "TEMP_STATUES_CHECK"]
 #st.text('ID')
-ID=st.text_input(label='ID',placeholder='ID')
+ID=st.text_input(label='ID',placeholder='ID',*)
 
 
 
