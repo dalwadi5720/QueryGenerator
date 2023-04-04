@@ -228,5 +228,5 @@ st.write(Generated_Query)
 if st.button('Run Query'):
     for key,value in dict.items():
         if value == '':
-            st.write('**Please enter value into {key}**')
+            st.write(f'<span style='color:red'>**Please enter value into {key}**</span>')
         
