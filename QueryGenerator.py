@@ -191,7 +191,7 @@ st.header("Generated_Query")
 #         Generated_Query = st.text(f"'{lst[i]}' AS {lst[i]},")
 
 count = 0
-for key,value in dict:
+for key,value in dict.items():
   if count == 0:
     st.text(f"select {value} AS {key},")
     count += 1
