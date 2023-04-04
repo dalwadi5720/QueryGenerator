@@ -33,7 +33,7 @@ lst = ["ID",
 "UPDATED_BY",
 "TEMP_STATUES_CHECK"]
 #st.text('ID')
-ID=st.text_input(label='ID',placeholder='ID',*)
+ID=st.text_input(label='ID',placeholder='ID')
 
 
 
