@@ -223,4 +223,5 @@ for key,value in dict.items():
   else:
     Generated_Query += f"{value} AS {key},"
     
-  
+if streamlit.button('Show Query'):  
+    st.text(Generated_Query)
