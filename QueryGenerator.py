@@ -224,3 +224,8 @@ for key,value in dict.items():
     Generated_Query += f"{value} AS {key},"
     
 st.write(Generated_Query)
+
+for key,value in dict.items():
+    if value == '':
+        st.write(f"$$ Please enter the value for {key} $$")
+        
