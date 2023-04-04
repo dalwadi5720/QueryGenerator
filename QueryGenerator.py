@@ -197,17 +197,30 @@ st.header("Generated_Query")
 #         Generated_Query = st.text(f"select {lst[i]} AS {lst[i]},")
 #     else:
 #         Generated_Query = st.text(f"'{lst[i]}' AS {lst[i]},")
-
+Generated_Query = ''
 count = 0
+# for key,value in dict.items():
+#   if count == 0:
+#     st.write(f"SELECT {value} AS {key},")
+#     count += 1
+#   elif key == 'TEMP_STATUES_CHECK':
+#     st.write(f"{value} AS {key};")
+#   elif key == 'CONFIG':
+#     st.text(f"$$ {value} $$ AS {key} ,")
+#   else:
+#     st.write(f"{value} AS {key},")
+    
+    
+    
 for key,value in dict.items():
   if count == 0:
-    st.write(f"SELECT {value} AS {key},")
+    Generated_Query += f"SELECT {value} AS {key},"
     count += 1
   elif key == 'TEMP_STATUES_CHECK':
-    st.write(f"{value} AS {key};")
+    Generated_Query += f"{value} AS {key};"
   elif key == 'CONFIG':
-    st.text(f"$$ {value} $$ AS {key} ,")
+    Generated_Query += f"$$ {value} $$ AS {key} ,"
   else:
-    st.write(f"{value} AS {key},")
+    Generated_Query += f"{value} AS {key},"
     
   
