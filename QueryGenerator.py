@@ -193,7 +193,7 @@ st.header("Generated_Query")
 count = 0
 for key,value in dict.items():
   if count == 0:
-    st.text(f"select {value} AS {key},")
+    st.text(f"SELECT {value} AS {key},")
     count += 1
   else:
     st.text(f"{value} AS {key},")
