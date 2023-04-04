@@ -206,7 +206,7 @@ for key,value in dict.items():
   elif key == 'TEMP_STATUES_CHECK':
     st.write(f"{value} AS {key};")
   elif key == 'CONFIG':
-    st.write(f"'$$' {value} '$$' AS {key} ,")
+    st.text(f"$$ {value} $$ AS {key} ,")
   else:
     st.write(f"{value} AS {key},")
     
