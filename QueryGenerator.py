@@ -225,7 +225,5 @@ for key,value in dict.items():
     
 st.write(Generated_Query)
 
-for key,value in dict.items():
-    if value == '':
-        st.write(f"$$ Please enter the value for {key} $$")
+
         
