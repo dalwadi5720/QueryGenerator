@@ -159,11 +159,43 @@ UPDATED_BY=st.text_input(label='UPDATED_BY',placeholder='UPDATED_BY')
 #st.text('TEMP_STATUES_CHECK')
 TEMP_STATUES_CHECK=st.text_input(label='TEMP_STATUES_CHECK',placeholder='TEMP_STATUES_CHECK')
 
+dict = {'ID':ID,
+'SOURCESYSTEM':SOURCESYSTEM,
+'SOURCETYPE':SOURCETYPE,
+'SOURCE':SOURCE,
+'TASK_NAME':TASK_NAME,
+'TASK_GROUP':TASK_GROUP,
+'CODE_FILE':CODE_FILE,
+'LASTRUNDATE':LASTRUNDATE,
+'INSERTED_DATE':INSERTED_DATE,
+'DIRECTORY_NAME':DIRECTORY_NAME,
+'LOADTYPE':LOADTYPE,
+'FLAG':FLAG,
+'RUNTYPEFLAG':RUNTYPEFLAG,
+'LASTRUNDATE':LASTRUNDATE,
+'INSERTED_DATE':INSERTED_DATE,
+'INSERTED_BY':INSERTED_BY,
+'UPDATED_BY':UPDATED_BY,
+'TEMP_STATUES_CHECK':TEMP_STATUES_CHECK}
 
 #Generated_Query = st.text("select {ID} AS ID , '{}')
-                          
-for i in range(0,len(lst)):
-    if i == 0:
-        Generated_Query = st.text(f"select {lst[i]} AS {lst[i]},")
-    else:
-        Generated_Query = st.text(f"'{lst[i]}' AS {lst[i]},")
+
+st.text("       ")
+st.text("       ")
+st.header("Generated_Query")  
+
+# for i in range(0,len(lst)):
+#     if i == 0:
+#         Generated_Query = st.text(f"select {lst[i]} AS {lst[i]},")
+#     else:
+#         Generated_Query = st.text(f"'{lst[i]}' AS {lst[i]},")
+
+count = 0
+for key,value in dict:
+  if count = 0:
+    st.text(f"select {value} AS {key},")
+    count += 1
+  else:
+    st.text(f"select {value} AS {key},")
+    
+  
