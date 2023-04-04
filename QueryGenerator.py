@@ -60,7 +60,6 @@ TASK_NAME=st.text_input(label='TASK_NAME',placeholder='TASK_NAME')
 #st.text('TASK_GROUP')
 TASK_GROUP=st.text_input(label='TASK_GROUP',placeholder='TASK_GROUP')
 
-Generated_Query = st.text("select {ID} AS ID , '{}')
 
 #st.text('CODE_FILE')
 CODE_FILE=st.text_input(label='CODE_FILE',placeholder='CODE_FILE')
@@ -160,8 +159,11 @@ UPDATED_BY=st.text_input(label='UPDATED_BY',placeholder='UPDATED_BY')
 #st.text('TEMP_STATUES_CHECK')
 TEMP_STATUES_CHECK=st.text_input(label='TEMP_STATUES_CHECK',placeholder='TEMP_STATUES_CHECK')
 
+
+Generated_Query = st.text("select {ID} AS ID , '{}')
+                          
 for i in range(0,len(lst)):
     if i == 0:
-        print(f"select {lst[i]} AS {lst[i]},")
+        Generated_Query = st.text(f"select {lst[i]} AS {lst[i]},")
     else:
-        print(f"'{lst[i]}' AS {lst[i]},")
+        Generated_Query = st.text(f"'{lst[i]}' AS {lst[i]},")
