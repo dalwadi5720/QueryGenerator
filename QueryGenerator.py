@@ -195,6 +195,8 @@ for key,value in dict.items():
   if count == 0:
     st.text(f"SELECT {value} AS {key},")
     count += 1
+  elif key == 'TEMP_STATUES_CHECK':
+    st.text(f"{value} AS {key};")
   else:
     st.text(f"{value} AS {key},")
     
