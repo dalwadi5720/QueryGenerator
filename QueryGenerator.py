@@ -219,7 +219,7 @@ for key,value in dict.items():
   elif key == 'TEMP_STATUES_CHECK':
     Generated_Query += f"{value} AS {key};"
   elif key == 'CONFIG':
-    Generated_Query += f"$$ {value} $$ AS {key} ,"
+    Generated_Query += f"\$$ {value} \$$ AS {key} ,"
   else:
     Generated_Query += f"{value} AS {key},"
     
